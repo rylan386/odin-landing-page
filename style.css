@@ -1,0 +1,279 @@
+html {
+    background-color: wheat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    font-family: 'Fanwood Text', serif;
+}
+
+#logo {
+    margin-top: 20px;
+}
+
+li {
+    display: inline;
+    font-size: 25px;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 20px;
+} 
+ 
+.menu {
+    margin-top: 30px;
+ }
+
+ li a {
+     text-decoration: none;
+     color: black;
+ }
+
+li > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.body {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+.text > h1 {
+    font-size: 40px;
+    font-family: 'Economica', sans-serif;
+}
+
+.text {
+    padding-top: 2em;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+.text > p {
+    font-family: 'Fanwood Text', serif;
+    font-size: 20px;
+}
+.text > h3 {
+    font-family: 'Economica', sans-serif;
+}
+
+.text > button {
+    font-family: 'Fanwood Text', serif;
+    background-color: bisque;
+    border-radius: 15px;
+    border-color: black;
+    border: 2px;
+    border-style: solid;
+    height: 50px;
+    width: 80px;
+    font-size: 16px;
+}
+
+
+#beans {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 50px;
+    border-color: black;
+    border: 3px;
+    border-style: solid;
+    box-shadow: 0px 0px 5px 4px rgb(43, 41, 41);
+}
+
+.drinks {
+    display: flex;
+    background-color: wheat;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    flex-direction: column;
+}
+
+.drinks h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Economica', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-family: 'Fanwood Text', serif;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 50px;
+}
+
+.coffee p {
+    width: 300px;
+}
+.coffee img {
+    border-radius: 50px;
+    border-color: black;
+    border: 3px;
+    border-style: solid;
+    box-shadow: 0px 0px 5px 4px rgb(43, 41, 41);
+}
+
+.quote {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.quote > h3 {
+    font-family: 'Economica', sans-serif;
+    font-size: 60px;
+}
+
+.quote > p {
+    font-family: 'Fanwood Text', serif;
+    font-size: 40px;
+}
+
+.subquote {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.sub {
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    padding: 2rem 4rem 2rem 4rem;
+    border-radius: 5rem;
+    border-color: black;
+    border-style: solid;
+    flex-wrap: wrap;
+}
+
+.sub2 > h3 {
+    font-family: 'Economica', sans-serif;
+    font-size: 30px;
+}
+
+.sub2 > p {
+    font-family: 'Fanwood Text', serif;
+    font-size: 25px;
+}
+
+.sub > button {
+    font-family: 'Fanwood Text', serif;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 15px;
+    border-color: black;
+    border: 2px;
+    border-style: solid;
+    height: 50px;
+    width: 80px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: black;
+    text-decoration: underline;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer > a{
+    color:black;
+    text-decoration: none;
+}
+
+.footer > a:hover {
+    color: rgb(12, 25, 99);
+    text-decoration: underline;
+}
+
+@media (max-width:460px){
+    .header {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .menu {
+        align-content: center;
+    }
+
+    .body {
+        flex-direction: column;
+    }
+
+    #beans {
+        display: none;
+    }
+
+    .drinks {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 300px;
+    }
+
+    .coffee {
+        flex-direction: column;
+    }
+
+    #image {
+        width: 300px;
+        height: 200px;
+    }
+
+    .quote {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .subquote {
+        margin: 1em;
+    }
+
+    .sub {
+        justify-content: center;
+        align-content: center;
+        gap: 0;
+    }
+}
+
+@media (max-width:322px) {
+    ul li {
+        align-content: center;
+    }
+}
