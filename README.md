@@ -1,5 +1,7 @@
-# odin-landing-page
-Sources
+A webpage made with html and css
+
+Sources:
+
 Coffee logo:
 https://pixabay.com/vectors/coffee-cup-logo-icon-drink-cafe-3642712/
 
